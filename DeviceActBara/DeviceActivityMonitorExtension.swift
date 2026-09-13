@@ -6,43 +6,48 @@
 //
 
 import DeviceActivity
+import UserNotifications
+import Foundation
 
-// Optionally override any of the functions below.
-// Make sure that your class name matches the NSExtensionPrincipalClass in your Info.plist.
 class DeviceActivityMonitorExtension: DeviceActivityMonitor {
-    override func intervalDidStart(for activity: DeviceActivityName) {
-        super.intervalDidStart(for: activity)
-        
-        // Handle the start of the interval.
-    }
-    
-    override func intervalDidEnd(for activity: DeviceActivityName) {
-        super.intervalDidEnd(for: activity)
-        
-        // Handle the end of the interval.
-    }
     
     override func eventDidReachThreshold(_ event: DeviceActivityEvent.Name, activity: DeviceActivityName) {
         super.eventDidReachThreshold(event, activity: activity)
         
-        // Handle the event reaching its threshold.
+        if event.rawValue == "BaraWarningEvent" {
+            // 85% waktu tercapai → Kirim notifikasi agar aplikasi utama menyalakan Dynamic Island
+            sendNotification(
+                identifier: "BaraWarningNotif",
+                title: "⏰ Waktumu hampir habis!",
+                body: "Masih ada sedikit sisa waktu scrollmu. Siap-siap ya!",
+                deepLink: "bara://startliveactivity"
+            )
+        } else if event.rawValue == "BaraThresholdEvent" {
+            // 100% waktu tercapai → Kirim notifikasi "Waktu habis"
+            sendNotification(
+                identifier: "BaraThresholdNotif",
+                title: "🔥 Waktu scrollmu habis!",
+                body: "Yuk balik fokus ke kerjaan kamu.",
+                deepLink: "bara://timeup"
+            )
+        }
     }
     
-    override func intervalWillStartWarning(for activity: DeviceActivityName) {
-        super.intervalWillStartWarning(for: activity)
+    private func sendNotification(identifier: String, title: String, body: String, deepLink: String) {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = .default
+        content.userInfo = ["deepLink": deepLink]
         
-        // Handle the warning before the interval starts.
-    }
-    
-    override func intervalWillEndWarning(for activity: DeviceActivityName) {
-        super.intervalWillEndWarning(for: activity)
-        
-        // Handle the warning before the interval ends.
-    }
-    
-    override func eventWillReachThresholdWarning(_ event: DeviceActivityEvent.Name, activity: DeviceActivityName) {
-        super.eventWillReachThresholdWarning(event, activity: activity)
-        
-        // Handle the warning before the event reaches its threshold.
+        // Trigger instan (tanpa delay)
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: nil)
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("❌ Notifikasi gagal: \(error.localizedDescription)")
+            } else {
+                print("✅ Notifikasi '\(identifier)' berhasil dikirim.")
+            }
+        }
     }
 }

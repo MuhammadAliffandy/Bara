@@ -11,8 +11,8 @@ import SwiftUI
 @main
 struct TimeCountWidgetBundle: WidgetBundle {
     var body: some Widget {
-        TimeCountWidget()
-        TimeCountWidgetControl()
+//        TimeCountWidget()
+//        TimeCountWidgetControl()
         TimeCountWidgetLiveActivity()
     }
 }

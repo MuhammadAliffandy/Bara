@@ -6,30 +6,32 @@
 //
 
 import ManagedSettings
+import Foundation
 
-// Override the functions below to customize the shield actions used in various situations.
-// The system provides a default response for any functions that your subclass doesn't override.
-// Make sure that your class name matches the NSExtensionPrincipalClass in your Info.plist.
 class ShieldActionExtension: ShieldActionDelegate {
+    
+    // App Group untuk komunikasi dengan Main App
+    private let defaults = UserDefaults(suiteName: "group.com.fandy.bara.shared")
+    
     override func handle(action: ShieldAction, for application: ApplicationToken, completionHandler: @escaping (ShieldActionResponse) -> Void) {
-        // Handle the action as needed.
         switch action {
         case .primaryButtonPressed:
-            completionHandler(.close)
+            // Kasih sinyal ke Main App kalau user butuh break
+            defaults?.set(true, forKey: "pendingBreakRequest")
+            
+            // JURUS TELEPORTASI: Langsung buka aplikasi Bara!
+            completionHandler(.openParentalControlsApp)
+            
         case .secondaryButtonPressed:
-            completionHandler(.defer)
+            completionHandler(.close)
+            
         @unknown default:
-            fatalError()
+            completionHandler(.close)
         }
     }
     
     override func handle(action: ShieldAction, for webDomain: WebDomainToken, completionHandler: @escaping (ShieldActionResponse) -> Void) {
-        // Handle the action as needed.
-        completionHandler(.close)
-    }
-    
-    override func handle(action: ShieldAction, for category: ActivityCategoryToken, completionHandler: @escaping (ShieldActionResponse) -> Void) {
-        // Handle the action as needed.
-        completionHandler(.close)
+        defaults?.set(true, forKey: "pendingBreakRequest")
+        completionHandler(.openParentalControlsApp)
     }
 }

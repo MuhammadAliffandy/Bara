@@ -6,20 +6,255 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D0DF957930568DC700A1D472 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DF957830568DC700A1D472 /* DeviceActivity.framework */; };
+		D0DF958130568DC700A1D472 /* DeviceActBara.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D0DF957730568DC700A1D472 /* DeviceActBara.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0E433A43056A983000322EA /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DF954930567FC800A1D472 /* ManagedSettings.framework */; };
+		D0E433AC3056A983000322EA /* BaraShieldAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D0E433A33056A983000322EA /* BaraShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0E433B63056AA2D000322EA /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DF954930567FC800A1D472 /* ManagedSettings.framework */; };
+		D0E433B73056AA2D000322EA /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DF955D3056870900A1D472 /* ManagedSettingsUI.framework */; };
+		D0E433BF3056AA2D000322EA /* BaraShieldConf.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D0E433B53056AA2D000322EA /* BaraShieldConf.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0EECB0D3055419500A441A8 /* TimeCountWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D0EECAF73055419400A441A8 /* TimeCountWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0DF957F30568DC700A1D472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D09862D73031D12A003CB423 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0DF957630568DC700A1D472;
+			remoteInfo = DeviceActBara;
+		};
+		D0E433AA3056A983000322EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D09862D73031D12A003CB423 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E433A23056A983000322EA;
+			remoteInfo = BaraShieldAction;
+		};
+		D0E433BD3056AA2D000322EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D09862D73031D12A003CB423 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E433B43056AA2D000322EA;
+			remoteInfo = BaraShieldConf;
+		};
+		D0EECB0B3055419500A441A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D09862D73031D12A003CB423 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0EECAF63055419400A441A8;
+			remoteInfo = TimeCountWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0EECB123055419500A441A8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0DF958130568DC700A1D472 /* DeviceActBara.appex in Embed Foundation Extensions */,
+				D0E433BF3056AA2D000322EA /* BaraShieldConf.appex in Embed Foundation Extensions */,
+				D0E433AC3056A983000322EA /* BaraShieldAction.appex in Embed Foundation Extensions */,
+				D0EECB0D3055419500A441A8 /* TimeCountWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D09862DF3031D12A003CB423 /* bara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DF954930567FC800A1D472 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		D0DF955D3056870900A1D472 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		D0DF957730568DC700A1D472 /* DeviceActBara.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeviceActBara.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DF957830568DC700A1D472 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		D0E433A33056A983000322EA /* BaraShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BaraShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E433B53056AA2D000322EA /* BaraShieldConf.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BaraShieldConf.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EECAF73055419400A441A8 /* TimeCountWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimeCountWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EECAF93055419400A441A8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D0EECAFB3055419400A441A8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D0EECB9B30558CA400A441A8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D0EECBA030558D1300A441A8 /* FamilyControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FamilyControls.framework; path = System/Library/Frameworks/FamilyControls.framework; sourceTree = SDKROOT; };
+		D0EECBA230558D1E00A441A8 /* ScreenTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenTime.framework; path = System/Library/Frameworks/ScreenTime.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D0DF958530568DC700A1D472 /* Exceptions for "DeviceActBara" folder in "DeviceActBara" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D0DF957630568DC700A1D472 /* DeviceActBara */;
+		};
+		D0DF958B3056939900A1D472 /* Exceptions for "TimeCountWidget" folder in "DeviceActBara" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TimeCountWidgetLiveActivity.swift,
+			);
+			target = D0DF957630568DC700A1D472 /* DeviceActBara */;
+		};
+		D0DF95933056945C00A1D472 /* Exceptions for "bara" folder in "DeviceActBara" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Components/Atom/AppConcaveToShape.swift,
+				Components/Atom/AppText.swift,
+				Components/Atom/AppWrapButton.swift,
+				Components/Molecules/AppButton/AppButton.swift,
+				Components/Molecules/AppButton/AppIconCircleButton.swift,
+				Components/Molecules/AppCircularProgress/AppCircularProgress.swift,
+				Components/Molecules/AppHeadline/AppHeadline.swift,
+				Utilities/AppIcon.swift,
+				Utilities/AppImage.swift,
+				Utilities/AppPadding.swift,
+				Utilities/AppRadius.swift,
+				Utilities/AppSpacing.swift,
+				"Utilities/Color+Extension.swift",
+				"Utilities/Font+Extension.swift",
+			);
+			target = D0DF957630568DC700A1D472 /* DeviceActBara */;
+		};
+		D0E4339E30569AFB000322EA /* Exceptions for "TimeCountWidget" folder in "bara" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TimeCountWidgetLiveActivity.swift,
+			);
+			target = D09862DE3031D12A003CB423 /* bara */;
+		};
+		D0E433B03056A983000322EA /* Exceptions for "BaraShieldAction" folder in "BaraShieldAction" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D0E433A23056A983000322EA /* BaraShieldAction */;
+		};
+		D0E433C33056AA2D000322EA /* Exceptions for "BaraShieldConf" folder in "BaraShieldConf" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D0E433B43056AA2D000322EA /* BaraShieldConf */;
+		};
+		D0EECA9630553E6100A441A8 /* Exceptions for "bara" folder in "bara" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D09862DE3031D12A003CB423 /* bara */;
+		};
+		D0EECB113055419500A441A8 /* Exceptions for "TimeCountWidget" folder in "TimeCountWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D0EECAF63055419400A441A8 /* TimeCountWidgetExtension */;
+		};
+		D0EECB1A3055459800A441A8 /* Exceptions for "bara" folder in "TimeCountWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Components/Atom/AppConcaveToShape.swift,
+				Components/Atom/AppText.swift,
+				Components/Atom/AppWrapButton.swift,
+				Components/Molecules/AppButton/AppButton.swift,
+				Components/Molecules/AppButton/AppIconCircleButton.swift,
+				Components/Molecules/AppCircularProgress/AppCircularProgress.swift,
+				Components/Molecules/AppHeadline/AppHeadline.swift,
+				Utilities/AppIcon.swift,
+				Utilities/AppImage.swift,
+				Utilities/AppPadding.swift,
+				Utilities/AppRadius.swift,
+				Utilities/AppSpacing.swift,
+				"Utilities/Color+Extension.swift",
+				"Utilities/Font+Extension.swift",
+			);
+			target = D0EECAF63055419400A441A8 /* TimeCountWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D09862E13031D12A003CB423 /* bara */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D0EECA9630553E6100A441A8 /* Exceptions for "bara" folder in "bara" target */,
+				D0EECB1A3055459800A441A8 /* Exceptions for "bara" folder in "TimeCountWidgetExtension" target */,
+				D0DF95933056945C00A1D472 /* Exceptions for "bara" folder in "DeviceActBara" target */,
+			);
 			path = bara;
+			sourceTree = "<group>";
+		};
+		D0DF957A30568DC700A1D472 /* DeviceActBara */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D0DF958530568DC700A1D472 /* Exceptions for "DeviceActBara" folder in "DeviceActBara" target */,
+			);
+			path = DeviceActBara;
+			sourceTree = "<group>";
+		};
+		D0E433A53056A983000322EA /* BaraShieldAction */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D0E433B03056A983000322EA /* Exceptions for "BaraShieldAction" folder in "BaraShieldAction" target */,
+			);
+			path = BaraShieldAction;
+			sourceTree = "<group>";
+		};
+		D0E433B83056AA2D000322EA /* BaraShieldConf */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D0E433C33056AA2D000322EA /* Exceptions for "BaraShieldConf" folder in "BaraShieldConf" target */,
+			);
+			path = BaraShieldConf;
+			sourceTree = "<group>";
+		};
+		D0EECAFD3055419400A441A8 /* TimeCountWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D0E4339E30569AFB000322EA /* Exceptions for "TimeCountWidget" folder in "bara" target */,
+				D0EECB113055419500A441A8 /* Exceptions for "TimeCountWidget" folder in "TimeCountWidgetExtension" target */,
+				D0DF958B3056939900A1D472 /* Exceptions for "TimeCountWidget" folder in "DeviceActBara" target */,
+			);
+			path = TimeCountWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D09862DC3031D12A003CB423 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0DF957430568DC700A1D472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0DF957930568DC700A1D472 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E433A03056A983000322EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E433A43056A983000322EA /* ManagedSettings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E433B23056AA2D000322EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E433B63056AA2D000322EA /* ManagedSettings.framework in Frameworks */,
+				D0E433B73056AA2D000322EA /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EECAF43055419400A441A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +268,11 @@
 			isa = PBXGroup;
 			children = (
 				D09862E13031D12A003CB423 /* bara */,
+				D0EECAFD3055419400A441A8 /* TimeCountWidget */,
+				D0DF957A30568DC700A1D472 /* DeviceActBara */,
+				D0E433A53056A983000322EA /* BaraShieldAction */,
+				D0E433B83056AA2D000322EA /* BaraShieldConf */,
+				D0EECAF83055419400A441A8 /* Frameworks */,
 				D09862E03031D12A003CB423 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +281,27 @@
 			isa = PBXGroup;
 			children = (
 				D09862DF3031D12A003CB423 /* bara.app */,
+				D0EECAF73055419400A441A8 /* TimeCountWidgetExtension.appex */,
+				D0DF957730568DC700A1D472 /* DeviceActBara.appex */,
+				D0E433A33056A983000322EA /* BaraShieldAction.appex */,
+				D0E433B53056AA2D000322EA /* BaraShieldConf.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D0EECAF83055419400A441A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0EECBA230558D1E00A441A8 /* ScreenTime.framework */,
+				D0EECBA030558D1300A441A8 /* FamilyControls.framework */,
+				D0EECB9B30558CA400A441A8 /* UserNotifications.framework */,
+				D0EECAF93055419400A441A8 /* WidgetKit.framework */,
+				D0EECAFB3055419400A441A8 /* SwiftUI.framework */,
+				D0DF954930567FC800A1D472 /* ManagedSettings.framework */,
+				D0DF955D3056870900A1D472 /* ManagedSettingsUI.framework */,
+				D0DF957830568DC700A1D472 /* DeviceActivity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +314,15 @@
 				D09862DB3031D12A003CB423 /* Sources */,
 				D09862DC3031D12A003CB423 /* Frameworks */,
 				D09862DD3031D12A003CB423 /* Resources */,
+				D0EECB123055419500A441A8 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D0EECB0C3055419500A441A8 /* PBXTargetDependency */,
+				D0DF958030568DC700A1D472 /* PBXTargetDependency */,
+				D0E433AB3056A983000322EA /* PBXTargetDependency */,
+				D0E433BE3056AA2D000322EA /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D09862E13031D12A003CB423 /* bara */,
@@ -69,6 +333,94 @@
 			productName = bara;
 			productReference = D09862DF3031D12A003CB423 /* bara.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D0DF957630568DC700A1D472 /* DeviceActBara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0DF958230568DC700A1D472 /* Build configuration list for PBXNativeTarget "DeviceActBara" */;
+			buildPhases = (
+				D0DF957330568DC700A1D472 /* Sources */,
+				D0DF957430568DC700A1D472 /* Frameworks */,
+				D0DF957530568DC700A1D472 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D0DF957A30568DC700A1D472 /* DeviceActBara */,
+			);
+			name = DeviceActBara;
+			packageProductDependencies = (
+			);
+			productName = DeviceActBara;
+			productReference = D0DF957730568DC700A1D472 /* DeviceActBara.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D0E433A23056A983000322EA /* BaraShieldAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E433AD3056A983000322EA /* Build configuration list for PBXNativeTarget "BaraShieldAction" */;
+			buildPhases = (
+				D0E4339F3056A983000322EA /* Sources */,
+				D0E433A03056A983000322EA /* Frameworks */,
+				D0E433A13056A983000322EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D0E433A53056A983000322EA /* BaraShieldAction */,
+			);
+			name = BaraShieldAction;
+			packageProductDependencies = (
+			);
+			productName = BaraShieldAction;
+			productReference = D0E433A33056A983000322EA /* BaraShieldAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D0E433B43056AA2D000322EA /* BaraShieldConf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E433C03056AA2D000322EA /* Build configuration list for PBXNativeTarget "BaraShieldConf" */;
+			buildPhases = (
+				D0E433B13056AA2D000322EA /* Sources */,
+				D0E433B23056AA2D000322EA /* Frameworks */,
+				D0E433B33056AA2D000322EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D0E433B83056AA2D000322EA /* BaraShieldConf */,
+			);
+			name = BaraShieldConf;
+			packageProductDependencies = (
+			);
+			productName = BaraShieldConf;
+			productReference = D0E433B53056AA2D000322EA /* BaraShieldConf.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D0EECAF63055419400A441A8 /* TimeCountWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0EECB0E3055419500A441A8 /* Build configuration list for PBXNativeTarget "TimeCountWidgetExtension" */;
+			buildPhases = (
+				D0EECAF33055419400A441A8 /* Sources */,
+				D0EECAF43055419400A441A8 /* Frameworks */,
+				D0EECAF53055419400A441A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D0EECAFD3055419400A441A8 /* TimeCountWidget */,
+			);
+			name = TimeCountWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = TimeCountWidgetExtension;
+			productReference = D0EECAF73055419400A441A8 /* TimeCountWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +433,18 @@
 				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					D09862DE3031D12A003CB423 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					D0DF957630568DC700A1D472 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					D0E433A23056A983000322EA = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					D0E433B43056AA2D000322EA = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					D0EECAF63055419400A441A8 = {
 						CreatedOnToolsVersion = 26.6;
 					};
 				};
@@ -100,12 +464,44 @@
 			projectRoot = "";
 			targets = (
 				D09862DE3031D12A003CB423 /* bara */,
+				D0EECAF63055419400A441A8 /* TimeCountWidgetExtension */,
+				D0DF957630568DC700A1D472 /* DeviceActBara */,
+				D0E433A23056A983000322EA /* BaraShieldAction */,
+				D0E433B43056AA2D000322EA /* BaraShieldConf */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D09862DD3031D12A003CB423 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0DF957530568DC700A1D472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E433A13056A983000322EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E433B33056AA2D000322EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EECAF53055419400A441A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +518,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0DF957330568DC700A1D472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E4339F3056A983000322EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E433B13056AA2D000322EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EECAF33055419400A441A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0DF958030568DC700A1D472 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0DF957630568DC700A1D472 /* DeviceActBara */;
+			targetProxy = D0DF957F30568DC700A1D472 /* PBXContainerItemProxy */;
+		};
+		D0E433AB3056A983000322EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0E433A23056A983000322EA /* BaraShieldAction */;
+			targetProxy = D0E433AA3056A983000322EA /* PBXContainerItemProxy */;
+		};
+		D0E433BE3056AA2D000322EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0E433B43056AA2D000322EA /* BaraShieldConf */;
+			targetProxy = D0E433BD3056AA2D000322EA /* PBXContainerItemProxy */;
+		};
+		D0EECB0C3055419500A441A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0EECAF63055419400A441A8 /* TimeCountWidgetExtension */;
+			targetProxy = D0EECB0B3055419500A441A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D09862E83031D12B003CB423 /* Debug */ = {
@@ -251,11 +698,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = bara/bara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZB4G54X6W4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bara/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -269,12 +719,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fandy.bara.bara;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -283,11 +737,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = bara/bara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZB4G54X6W4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bara/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,8 +758,248 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fandy.bara.bara;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D0DF958330568DC700A1D472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActBara/DeviceActBara.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZB4G54X6W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActBara/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActBara;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fandy.bara.bara.DeviceActBara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0DF958430568DC700A1D472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActBara/DeviceActBara.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZB4G54X6W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActBara/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActBara;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fandy.bara.bara.DeviceActBara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0E433AE3056A983000322EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BaraShieldAction/BaraShieldAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZB4G54X6W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaraShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BaraShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fandy.bara.bara.BaraShieldAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0E433AF3056A983000322EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BaraShieldAction/BaraShieldAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZB4G54X6W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaraShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BaraShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fandy.bara.bara.BaraShieldAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0E433C13056AA2D000322EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BaraShieldConf/BaraShieldConf.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZB4G54X6W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaraShieldConf/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BaraShieldConf;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fandy.bara.bara.BaraShieldConf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0E433C23056AA2D000322EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BaraShieldConf/BaraShieldConf.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZB4G54X6W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaraShieldConf/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BaraShieldConf;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fandy.bara.bara.BaraShieldConf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0EECB0F3055419500A441A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = ZB4G54X6W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeCountWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeCountWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fandy.bara.bara.TimeCountWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0EECB103055419500A441A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = ZB4G54X6W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeCountWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeCountWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fandy.bara.bara.TimeCountWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,6 +1024,42 @@
 			buildConfigurations = (
 				D09862EB3031D12B003CB423 /* Debug */,
 				D09862EC3031D12B003CB423 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0DF958230568DC700A1D472 /* Build configuration list for PBXNativeTarget "DeviceActBara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DF958330568DC700A1D472 /* Debug */,
+				D0DF958430568DC700A1D472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E433AD3056A983000322EA /* Build configuration list for PBXNativeTarget "BaraShieldAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E433AE3056A983000322EA /* Debug */,
+				D0E433AF3056A983000322EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E433C03056AA2D000322EA /* Build configuration list for PBXNativeTarget "BaraShieldConf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E433C13056AA2D000322EA /* Debug */,
+				D0E433C23056AA2D000322EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0EECB0E3055419500A441A8 /* Build configuration list for PBXNativeTarget "TimeCountWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EECB0F3055419500A441A8 /* Debug */,
+				D0EECB103055419500A441A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
