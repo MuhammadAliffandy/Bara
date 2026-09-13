@@ -44,7 +44,7 @@ struct AppButton: View{
 #Preview {
     AppButton(
         action: {
-            print("test")
+
         },
               textButton: "Default",
               textColor: .white,

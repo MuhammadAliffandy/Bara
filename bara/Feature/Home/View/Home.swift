@@ -166,26 +166,26 @@ struct HomeView: View{
                     Image(AppImage.ImageTreeBackLeft)
                         .resizable()
                         .scaledToFill()
-                        .offset(x: isAnimatingBackTrees ? -UIScreen.main.bounds.width : 0)
+                        .offset(x: isAnimatingBackTrees ? -1000 : 0)
                         .opacity(isAnimatingBackTrees ? 0 : 1)
                     
                     
                     Image(AppImage.ImageTreeBackRight)
                         .resizable()
                         .scaledToFill()
-                        .offset(x: isAnimatingBackTrees ? UIScreen.main.bounds.width : 0)
+                        .offset(x: isAnimatingBackTrees ? 1000 : 0)
                         .opacity(isAnimatingBackTrees ? 0 : 1)
                 
                     Image(AppImage.ImageTreeFrontLeft)
                         .resizable()
                         .scaledToFill()
-                        .offset(x: isAnimatingFrontTrees ? -UIScreen.main.bounds.width : 0)
+                        .offset(x: isAnimatingFrontTrees ? -1000 : 0)
                         .opacity(isAnimatingFrontTrees ? 0 : 1)
                 
                     Image(AppImage.ImageTreeFrontRight)
                         .resizable()
                         .scaledToFill()
-                        .offset(x: isAnimatingFrontTrees ? UIScreen.main.bounds.width : 0)
+                        .offset(x: isAnimatingFrontTrees ? 1000 : 0)
                         .opacity(isAnimatingFrontTrees ? 0 : 1)
                     
                 }

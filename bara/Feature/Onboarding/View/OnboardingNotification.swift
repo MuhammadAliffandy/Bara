@@ -68,12 +68,12 @@ struct OnboardingNotificationView: View {
                     if granted {
                         router.push(.onboardingDynamic)
                     } else {
-                        print("Notification Permission Denied. Stay on this view.")
+
                         // TODO: Alert to user to open settings
                     }
                 }
             } catch {
-                print("Error meminta izin notifikasi: \(error.localizedDescription)")
+                
             }
         }
     }

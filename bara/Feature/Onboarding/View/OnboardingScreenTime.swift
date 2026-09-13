@@ -69,7 +69,7 @@ struct OnboardingScreenTimeView: View {
                 if AppFamilyControlService.shared.isAuthorized {
                     router.push(.onboardingDistraction)
                 } else {
-                    print("Screen Time Permission Denied. Stay on this view.")
+
                     // TODO: Jika user menolak, bisa ditambahkan alert untuk mengarahkan ke Setting
                 }
             }

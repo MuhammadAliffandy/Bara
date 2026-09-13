@@ -25,7 +25,7 @@ class ShieldActionExtension: ShieldActionDelegate {
         case .secondaryButtonPressed:
             completionHandler(.close)
             
-        @unknown default:
+        default:
             completionHandler(.close)
         }
     }

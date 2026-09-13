@@ -68,7 +68,7 @@ struct OnboardingDistractionView: View {
         )
 
         .onChange(of: familyService.selectionToBlock) { newSelection , oldSelection in
-            print("User memilih \(newSelection.applicationTokens.count) aplikasi")
+
             router.push(.onboardingFinish)
         }
     }

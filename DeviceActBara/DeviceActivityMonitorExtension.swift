@@ -44,9 +44,7 @@ class DeviceActivityMonitorExtension: DeviceActivityMonitor {
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: nil)
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
-                print("❌ Notifikasi gagal: \(error.localizedDescription)")
-            } else {
-                print("✅ Notifikasi '\(identifier)' berhasil dikirim.")
+                
             }
         }
     }

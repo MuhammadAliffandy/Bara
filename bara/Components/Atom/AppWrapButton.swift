@@ -30,7 +30,7 @@ struct AppWrapButton<Content: View>:View{
 #Preview{
     HStack{
         AppWrapButton(
-            action: {print("test")} ,
+            action: {} ,
     
         ){
             

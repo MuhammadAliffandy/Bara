@@ -154,7 +154,7 @@ struct baraApp: App {
     // MARK: - Live Activity
     private func startLiveActivity(duration: TimeInterval, task: String) {
         guard ActivityAuthorizationInfo().areActivitiesEnabled else {
-            print("⚠️ Live Activities tidak diizinkan.")
+
             return
         }
         
@@ -170,12 +170,12 @@ struct baraApp: App {
         
         do {
             let activity = try Activity.request(attributes: attributes, content: content, pushType: nil)
-            print("✅ Dynamic Island menyala! Countdown: \(Int(duration))s | ID: \(activity.id)")
+
             
             // Panggil hack timer background
             startBackgroundBreakTimer(duration: duration, activity: activity)
         } catch {
-            print("❌ Gagal nyalakan Dynamic Island: \(error.localizedDescription)")
+            
         }
     }
     

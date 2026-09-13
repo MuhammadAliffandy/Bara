@@ -50,7 +50,7 @@ final class AppFamilyControlService {
                 self.isAuthorized = AuthorizationCenter.shared.authorizationStatus == .approved
             }
         } catch {
-            print("Gagal meminta izin: \(error.localizedDescription)")
+            
         }
     }
     
@@ -63,12 +63,12 @@ final class AppFamilyControlService {
         if !categories.isEmpty {
             store.shield.applicationCategories = .specific(categories, except: Set())
         }
-        print("✅ Shield AKTIF — TikTok dijebak sebagai pintu tol!")
+
     }
     
     func stopShielding() {
         store.shield.applications = nil
         store.shield.applicationCategories = nil
-        print("🔓 Shield LEPAS — User bebas scroll!")
+
     }
 }
